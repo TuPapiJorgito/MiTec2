@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CV – Deisy Carola Hernández López</title>
+<style>
+  :root{
+    --navy:#171a3d; --navy2:#232760; --violet:#7c5cff; --mint:#3ee6c4; --ink:#1d2033; --muted:#666b85;
+    --paper:#ffffff; --bg:#e9e9f3;
+    --mono:"JetBrains Mono","Fira Code",Consolas,Menlo,monospace;
+    --sans:"Inter","Segoe UI",Helvetica,Arial,sans-serif;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);line-height:1.5;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  .barra{max-width:900px;margin:18px auto 0;padding:0 8px;display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+  .aviso{font-size:.85rem;color:var(--muted)}
+  button{background:var(--violet);color:#fff;border:0;border-radius:8px;padding:10px 18px;font:600 .92rem var(--sans);cursor:pointer}
+  button:focus-visible{outline:3px solid var(--mint);outline-offset:2px}
+  .page{max-width:900px;margin:14px auto 40px;background:var(--paper);box-shadow:0 10px 40px rgba(23,26,61,.18);overflow:hidden;border-radius:6px}
+
+  .hero{background:var(--navy);color:#fff;padding:34px 44px 30px;display:grid;grid-template-columns:1fr auto;gap:24px;align-items:center}
+  .hero h1{margin:0;font-size:2.3rem;line-height:1.1;letter-spacing:-.5px}
+  .hero .rol{margin:8px 0 0;color:var(--mint);font:500 1.02rem var(--mono)}
+  .code{background:var(--navy2);border-radius:10px;padding:14px 18px 16px;font:.78rem/1.6 var(--mono);color:#c9ccff;min-width:300px;box-shadow:0 0 0 1px rgba(255,255,255,.08)}
+  .dots{display:flex;gap:6px;margin-bottom:10px}
+  .dots i{width:9px;height:9px;border-radius:50%;background:#ff6b8b}
+  .dots i:nth-child(2){background:#ffd166}.dots i:nth-child(3){background:var(--mint)}
+  .k{color:#b9a8ff}.s{color:var(--mint)}
+
+  .cols{display:grid;grid-template-columns:262px 1fr}
+  aside{background:#f3f2ff;padding:28px 26px 34px 44px;border-right:1px solid #e1def8}
+  main{padding:28px 44px 34px 34px}
+  h2{font-size:1.02rem;margin:0 0 10px;color:var(--navy);display:flex;align-items:center;gap:10px}
+  h2::after{content:"";flex:1;height:2px;background:linear-gradient(90deg,var(--violet),transparent)}
+  aside h2::after{display:none}
+  aside h2{border-left:4px solid var(--violet);padding-left:9px}
+  section{margin-bottom:22px}
+  h3{margin:12px 0 2px;font-size:1rem}
+  h3 small{font-weight:400;color:var(--muted);font-size:.86rem}
+  p,ul{margin:4px 0;font-size:.92rem}
+  ul{padding-left:18px}
+  li{margin-bottom:2px}
+  li::marker{color:var(--violet)}
+  .meta{color:var(--muted);font-size:.86rem}
+  .chips{display:flex;flex-wrap:wrap;gap:6px;margin:4px 0 12px}
+  .chips span{background:#fff;border:1px solid #cfc8ff;color:var(--navy);border-radius:999px;padding:2px 10px;font-size:.8rem}
+  .label{font-weight:600;font-size:.84rem;color:var(--navy);margin-top:10px}
+  .contact p{word-break:break-word;margin:6px 0}
+
+  @media(max-width:720px){
+    .hero{grid-template-columns:1fr;padding:26px 22px}.code{min-width:0}
+    .cols{grid-template-columns:1fr}
+    aside{border-right:0;padding:24px 22px}main{padding:24px 22px}
+  }
+  @media print{
+    @page{margin:0}
+    body{background:#fff}.barra{display:none}
+    .page{box-shadow:none;margin:0;max-width:none;border-radius:0}
+  }
+</style>
+</head>
+<body>
+<div class="barra">
+  <span class="aviso">Datos de ejemplo: cámbialos por los tuyos antes de enviarlo.</span>
+  <button onclick="window.print()">Guardar como PDF</button>
+</div>
+<div class="page">
+  <header class="hero">
+    <div>
+      <h1>Deisy Carola<br>Hernández López</h1>
+      <p class="rol">&lt;Desarrolladora de Software /&gt;</p>
+    </div>
+    <div class="code" aria-hidden="true">
+      <div class="dots"><i></i><i></i><i></i></div>
+      <div><span class="k">const</span> deisy = {</div>
+      <div>&nbsp;&nbsp;rol: <span class="s">"Desarrolladora"</span>,</div>
+      <div>&nbsp;&nbsp;stack: <span class="s">"Java · React · SQL"</span>,</div>
+      <div>&nbsp;&nbsp;ciudad: <span class="s">"CDMX"</span>,</div>
+      <div>&nbsp;&nbsp;disponible: <span class="k">true</span></div>
+      <div>};</div>
+    </div>
+  </header>
+
+  <div class="cols">
+    <aside>
+      <section class="contact">
+        <h2>Contacto</h2>
+        <p>Ciudad de México</p>
+        <p>deisy.hernandez@ejemplo.com</p>
+        <p>55 1234 5678</p>
+        <p>github.com/deisyhdev</p>
+        <p>linkedin.com/in/deisyhdev</p>
+      </section>
+
+      <section>
+        <h2>Habilidades</h2>
+        <div class="label">Lenguajes</div>
+        <div class="chips"><span>Java</span><span>Python</span><span>JavaScript</span><span>SQL</span></div>
+        <div class="label">Desarrollo web</div>
+        <div class="chips"><span>HTML</span><span>CSS</span><span>React</span><span>Node.js</span></div>
+        <div class="label">Bases de datos</div>
+        <div class="chips"><span>MySQL</span><span>PostgreSQL</span><span>MongoDB</span></div>
+        <div class="label">Herramientas</div>
+        <div class="chips"><span>Git</span><span>GitHub</span><span>VS Code</span><span>Postman</span><span>Docker básico</span></div>
+        <div class="label">Metodologías</div>
+        <div class="chips"><span>Scrum</span><span>APIs REST</span><span>POO</span></div>
+      </section>
+
+      <section>
+        <h2>Idiomas</h2>
+        <p><b>Español</b> · nativo</p>
+        <p><b>Inglés</b> · intermedio (B1), lectura técnica</p>
+      </section>
+    </aside>
+
+    <main>
+      <section>
+        <h2>Perfil</h2>
+        <p>Ingeniera en Sistemas Computacionales con experiencia en desarrollo web y bases de datos. Me gusta construir aplicaciones claras y mantenibles, trabajar en equipo con metodologías ágiles y aprender tecnologías nuevas con rapidez. Busco un puesto de desarrolladora donde pueda seguir creciendo y aportar desde el primer día.</p>
+      </section>
+
+      <section>
+        <h2>Experiencia</h2>
+        <h3>Desarrolladora Web Jr. <small>· Soluciones Digitales MX</small></h3>
+        <div class="meta">Feb 2024 – Actualidad</div>
+        <ul>
+          <li>Desarrollé módulos de un sistema de gestión interna con React y Node.js.</li>
+          <li>Diseñé consultas y optimicé tablas en MySQL, reduciendo en 30% el tiempo de carga de reportes.</li>
+          <li>Participé en revisiones de código y sprints semanales con Scrum.</li>
+        </ul>
+
+        <h3>Prácticas profesionales <small>· Área de Sistemas, Grupo Comercial Anáhuac</small></h3>
+        <div class="meta">Ago 2023 – Ene 2024</div>
+        <ul>
+          <li>Automaticé reportes de ventas con Python, ahorrando cerca de 5 horas semanales al equipo.</li>
+          <li>Brindé soporte técnico y documenté procesos de la base de datos.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Proyectos</h2>
+        <h3>Sistema de inventarios <small>· Java, MySQL</small></h3>
+        <p>Aplicación de escritorio para controlar entradas, salidas y existencias de una papelería. Encargada del diseño de la base de datos y la lógica de negocio.</p>
+        <h3>Agenda de citas en línea <small>· React, Node.js, MongoDB</small></h3>
+        <p>Aplicación web para reservar citas con autenticación de usuarios y API REST. Desarrollé el frontend y los endpoints principales.</p>
+        <h3>Portafolio personal <small>· HTML, CSS, JavaScript</small></h3>
+        <p>Sitio responsivo publicado en GitHub Pages con mis proyectos y contacto.</p>
+      </section>
+
+      <section>
+        <h2>Educación</h2>
+        <h3>Ingeniería en Sistemas Computacionales</h3>
+        <div class="meta">Instituto Tecnológico de la Ciudad de México · 2019 – 2023 · Titulada</div>
+      </section>
+
+      <section>
+        <h2>Cursos y certificaciones</h2>
+        <ul>
+          <li>Desarrollo Web Full Stack · Udemy · 2023</li>
+          <li>SQL para análisis de datos · Coursera · 2023</li>
+          <li>Git y GitHub desde cero · Platzi · 2022</li>
+        </ul>
+      </section>
+    </main>
+  </div>
+</div>
+</body>
+</html>

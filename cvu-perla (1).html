@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CVU · Perla Esmeralda Cerda Castañeda</title>
+<style>
+  :root {
+    --azul-900: #0a2a5e;
+    --azul-700: #1550a8;
+    --azul-500: #2f73d9;
+    --azul-100: #e6eefb;
+    --gris-900: #1b2430;
+    --gris-600: #5b6672;
+    --gris-300: #d4dae2;
+    --gris-100: #f3f5f8;
+    --blanco: #ffffff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+    background: var(--gris-100);
+    color: var(--gris-900);
+  }
+
+  .hoja {
+    max-width: 860px;
+    margin: 32px auto;
+    background: var(--blanco);
+    border: 1px solid var(--gris-300);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(10, 42, 94, .08);
+  }
+
+  .encabezado {
+    background: var(--azul-900);
+    color: var(--blanco);
+    padding: 36px 32px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  .avatar {
+    width: 64px; height: 64px;
+    border-radius: 50%;
+    background: var(--azul-500);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 1.4rem; font-weight: 700;
+    flex-shrink: 0;
+  }
+  .encabezado h1 { margin: 0 0 4px; font-size: 1.6rem; }
+  .encabezado p { margin: 0; color: var(--azul-100); font-size: 0.95rem; }
+
+  .cuerpo {
+    display: grid;
+    grid-template-columns: 220px 1fr;
+  }
+
+  .lateral {
+    background: var(--gris-100);
+    border-right: 1px solid var(--gris-300);
+    padding: 24px 20px;
+  }
+  .lateral h3 {
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+    color: var(--gris-600);
+    margin: 0 0 8px;
+  }
+  .lateral .bloque { margin-bottom: 24px; }
+  .lateral .bloque p { margin: 0 0 4px; font-size: 0.9rem; }
+  .etiqueta {
+    display: inline-block;
+    background: var(--azul-100);
+    color: var(--azul-700);
+    font-size: 0.78rem;
+    padding: 3px 10px;
+    border-radius: 999px;
+    margin: 0 6px 6px 0;
+  }
+
+  .principal { padding: 28px 32px; }
+  .seccion { margin-bottom: 22px; }
+  .seccion h2 {
+    font-size: 1rem;
+    color: var(--azul-900);
+    margin: 0 0 8px;
+    padding-bottom: 6px;
+    border-bottom: 2px solid var(--gris-300);
+  }
+  .seccion p { margin: 0; line-height: 1.55; color: var(--gris-900); font-size: 0.95rem; }
+
+  @media (max-width: 640px) {
+    .cuerpo { grid-template-columns: 1fr; }
+    .lateral { border-right: none; border-bottom: 1px solid var(--gris-300); }
+    .encabezado { flex-direction: column; text-align: center; }
+  }
+</style>
+</head>
+<body>
+
+<div class="hoja">
+
+  <div class="encabezado">
+    <div class="avatar">PC</div>
+    <div>
+      <h1>Perla Esmeralda Cerda Castañeda</h1>
+      <p>Patrona · Río Grande</p>
+    </div>
+  </div>
+
+  <div class="cuerpo">
+
+    <aside class="lateral">
+      <div class="bloque">
+        <h3>Contacto</h3>
+        <p>pecc2jun@gmail.com</p>
+        <p>671 102 3456</p>
+        <p>Río Grande</p>
+      </div>
+      <div class="bloque">
+        <h3>Idiomas</h3>
+        <p>Español</p>
+      </div>
+      <div class="bloque">
+        <h3>Habilidades</h3>
+        <span class="etiqueta">Office</span>
+        <span class="etiqueta">HTML/CSS</span>
+        <span class="etiqueta">JavaScript básico</span>
+        <span class="etiqueta">Bases de datos</span>
+        <span class="etiqueta">GIT y GitHub</span>
+        <span class="etiqueta">Trabajo en equipo</span>
+      </div>
+    </aside>
+
+    <main class="principal">
+
+      <div class="seccion">
+        <h2>Estudios</h2>
+        <p>Ingeniería en Sistemas Computacionales (2022 – actualidad).</p>
+      </div>
+
+      <div class="seccion">
+        <h2>Experiencia</h2>
+        <p>Soporte técnico y mantenimiento de equipos de cómputo para negocios locales: instalación de software, configuración de redes básicas y capacitación a usuarios.</p>
+      </div>
+
+      <div class="seccion">
+        <h2>Cursos o proyectos</h2>
+        <p>Curso de desarrollo web con HTML, CSS y JavaScript. Proyecto de la carrera: sistema con control de versiones en GIT y GitHub para la gestión de una página institucional.</p>
+      </div>
+
+    </main>
+
+  </div>
+
+</div>
+</body>
+</html>

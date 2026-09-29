@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conócenos · Sistema Institucional</title>
+  <link rel="stylesheet" href="design-system.css">
+</head>
+<body>
+<div class="ds-app">
+
+  <header class="ds-header">
+    <button class="ds-header__menu" aria-label="Abrir menú" onclick="document.querySelector('.ds-sidebar').classList.toggle('abierto')">☰</button>
+    <a href="index.html" class="ds-header__logo">
+      Sistema Institucional
+    </a>
+    <span class="ds-header__modulo">Conócenos</span>
+    <span class="ds-header__usuario">Usuario</span>
+  </header>
+
+  <nav class="ds-sidebar" aria-label="Menú principal">
+    <div class="ds-sidebar__titulo">Módulos</div>
+    <a href="conocenos.html" class="activo">Conócenos</a>
+    <a href="filosofia.html">Filosofía</a>
+    <a href="directorio.html">Directorio</a>
+    <a href="oferta-educativa.html">Oferta educativa</a>
+    <div class="ds-sidebar__titulo">Sistema</div>
+    <a href="#">Configuración</a>
+  </nav>
+
+  <main class="ds-main">
+    <ol class="ds-breadcrumb">
+      <li><a href="index.html">Inicio</a></li>
+      <li>Conócenos</li>
+    </ol>
+
+    <div class="ds-page-header">
+      <div>
+        <h1>Conócenos</h1>
+        <p class="ds-texto-sec" style="margin:0">TecNM Campus Zacatecas Norte, educación superior tecnológica en Río Grande, Zacatecas.</p>
+      </div>
+      <div class="ds-fila">
+        <a href="filosofia.html" class="ds-btn ds-btn--secundario">Filosofía</a>
+        <a href="oferta-educativa.html" class="ds-btn ds-btn--primario">Oferta educativa</a>
+      </div>
+    </div>
+
+    <div class="ds-grid">
+      <div class="ds-card">
+        <h2 class="ds-card__titulo">Nuestra historia</h2>
+        <p>El Instituto Tecnológico Superior Zacatecas Norte (ITSZN) fue creado por decreto del Ejecutivo del Estado el 20 de noviembre de 1990. Desde entonces ha ampliado su infraestructura y la calidad de su oferta educativa mediante la certificación de la institución y la acreditación de sus carreras.</p>
+        <p>Hoy forma parte del Tecnológico Nacional de México y cuenta con la mayor matrícula entre las instituciones de su tipo, con más de 1,600 estudiantes inscritos.</p>
+      </div>
+
+      <div class="ds-card">
+        <h2 class="ds-card__titulo">Misión</h2>
+        <p>Ofrecer servicios de educación superior tecnológica de calidad, pertinente y equitativa que contribuya a una sociedad justa y humana, con perspectiva de sustentabilidad y seguridad.</p>
+      </div>
+
+      <div class="ds-card">
+        <h2 class="ds-card__titulo">Visión</h2>
+        <p>Ser uno de los pilares del desarrollo sostenido de la región y del país, mediante la formación de profesionistas competentes.</p>
+        <!-- TODO: copiar la visión completa desde https://www.itszn.edu.mx/ -->
+      </div>
+
+      <div class="ds-card">
+        <h2 class="ds-card__titulo">Ubicación y contacto</h2>
+        <p>Carretera a González Ortega, kilómetro 3, Río Grande, Zacatecas, C.P. 98400.</p>
+        <p>Teléfono: (498) 982-0456</p>
+        <p>Sitio oficial: <a href="https://www.itszn.edu.mx/" target="_blank" rel="noopener">www.itszn.edu.mx</a></p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="ds-footer">
+    © 2026 Sistema Institucional · Todos los derechos reservados
+  </footer>
+
+</div>
+</body>
+</html>

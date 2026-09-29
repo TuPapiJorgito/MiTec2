@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Oferta educativa · Sistema Institucional</title>
+  <link rel="stylesheet" href="design-system.css">
+</head>
+<body>
+<div class="ds-app">
+
+  <header class="ds-header">
+    <button class="ds-header__menu" aria-label="Abrir menú" onclick="document.querySelector('.ds-sidebar').classList.toggle('abierto')">☰</button>
+    <a href="index.html" class="ds-header__logo">
+      Sistema Institucional
+    </a>
+    <span class="ds-header__modulo">Oferta educativa</span>
+    <span class="ds-header__usuario">Usuario</span>
+  </header>
+
+  <nav class="ds-sidebar" aria-label="Menú principal">
+    <div class="ds-sidebar__titulo">Módulos</div>
+    <a href="conocenos.html">Conócenos</a>
+    <a href="filosofia.html">Filosofía</a>
+    <a href="directorio.html">Directorio</a>
+    <a href="oferta-educativa.html" class="activo">Oferta educativa</a>
+    <div class="ds-sidebar__titulo">Sistema</div>
+    <a href="#">Configuración</a>
+  </nav>
+
+  <main class="ds-main">
+    <ol class="ds-breadcrumb">
+      <li><a href="index.html">Inicio</a></li>
+      <li>Oferta educativa</li>
+    </ol>
+
+    <div class="ds-page-header">
+      <div>
+        <h1>Oferta educativa</h1>
+        <p class="ds-texto-sec" style="margin:0">Programas basados en competencias, pensados para las necesidades del sector laboral.</p>
+      </div>
+      <div class="ds-fila">
+        <a href="conocenos.html" class="ds-btn ds-btn--secundario">Conócenos</a>
+        <a href="https://admision.itszn.edu.mx/" target="_blank" rel="noopener" class="ds-btn ds-btn--primario">Proceso de admisión</a>
+      </div>
+    </div>
+
+    <div class="ds-grid">
+      <div class="ds-card">
+        <h2 class="ds-card__titulo">Carreras</h2>
+        <div class="ds-tabla-wrap">
+          <table class="ds-tabla">
+            <thead>
+              <tr><th>Carrera</th><th>Descripción</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Ingeniería en Sistemas Computacionales</td><td>Desarrollo de software, diseño y administración de redes, con normas y estándares de calidad.</td></tr>
+              <tr><td>Ingeniería en Administración</td><td>Gestión de organizaciones y recursos para mejorar su productividad y competitividad.</td></tr>
+              <tr><td>Ingeniería en Gestión Empresarial</td><td>Creación, dirección y mejora de empresas con visión emprendedora.</td></tr>
+              <tr><td>Contador Público</td><td>Contabilidad, finanzas y fiscalización para organizaciones públicas y privadas.</td></tr>
+              <tr><td>Ingeniería en Industrias Alimentarias</td><td>Transformación de materias primas en alimentos con calidad, investigación y emprendimiento.</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <!-- TODO: verificar la lista vigente en https://www.itszn.edu.mx/ -->
+      </div>
+
+      <div class="ds-card">
+        <h2 class="ds-card__titulo">Modalidades</h2>
+        <div class="ds-tabla-wrap">
+          <table class="ds-tabla">
+            <thead>
+              <tr><th>Modalidad</th><th>Descripción</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Escolarizada</td><td>Clases presenciales en el campus, en horario regular.</td></tr>
+              <tr><td>Semiescolarizada</td><td>Sesiones presenciales combinadas con trabajo autónomo.</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <!-- TODO: confirmar modalidades por carrera en el sitio oficial -->
+      </div>
+    </div>
+  </main>
+
+  <footer class="ds-footer">
+    © 2026 Sistema Institucional · Todos los derechos reservados
+  </footer>
+
+</div>
+</body>
+</html>

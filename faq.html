@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Preguntas frecuentes · Sistema Institucional</title>
+  <link rel="stylesheet" href="design-system.css">
+</head>
+<body>
+<div class="ds-app">
+
+  <header class="ds-header">
+    <button class="ds-header__menu" aria-label="Abrir menú" onclick="document.querySelector('.ds-sidebar').classList.toggle('abierto')">☰</button>
+    <a href="index.html" class="ds-header__logo">
+      Sistema Institucional
+    </a>
+    <span class="ds-header__modulo">Preguntas frecuentes</span>
+    <span class="ds-header__usuario">Usuario</span>
+  </header>
+
+  <nav class="ds-sidebar" aria-label="Menú principal">
+    <div class="ds-sidebar__titulo">Módulos</div>
+    <a href="#">Conócenos</a>
+    <a href="#">Oferta educativa</a>
+    <a href="servicios.html">Servicios</a>
+    <a href="faq.html" class="activo">Preguntas frecuentes</a>
+    <a href="#">Bolsa de trabajo</a>
+    <div class="ds-sidebar__titulo">Sistema</div>
+    <a href="#">Configuración</a>
+  </nav>
+
+  <main class="ds-main">
+    <ol class="ds-breadcrumb">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="servicios.html">Servicios</a></li>
+      <li>Preguntas frecuentes</li>
+    </ol>
+
+    <div class="ds-page-header">
+      <div>
+        <h1>Preguntas frecuentes</h1>
+        <p class="ds-texto-sec">Respuestas sobre el TecNM campus Zacatecas Norte, basadas en la información de su página oficial.</p>
+      </div>
+    </div>
+
+    <div class="ds-grid ds-grid-2">
+      <div class="ds-card">
+        <h2 class="ds-card__titulo">¿Dónde está el instituto?</h2>
+        <p>Carretera a González Ortega Km. 3, C.P. 98400, Apartado Postal 178, Río Grande, Zacatecas.</p>
+      </div>
+
+      <div class="ds-card">
+        <h2 class="ds-card__titulo">¿Cómo me comunico con el instituto?</h2>
+        <p>Por correo a contacto@itszn.edu.mx o al conmutador (498) 488 30 02.</p>
+      </div>
+
+      <div class="ds-card">
+        <h2 class="ds-card__titulo">¿Cómo ingreso al instituto?</h2>
+        <p>Consulta la convocatoria de ingreso 2026 y realiza tu preregistro. También hay convocatorias de beca de descuento para alumnos de nuevo ingreso y de reingreso.</p>
+        <div class="ds-card__pie">
+          <a href="https://www.itszn.edu.mx/coyote/?pag=convoca_ingreso" target="_blank" rel="noopener" class="ds-btn ds-btn--secundario ds-btn--sm">Convocatoria</a>
+          <a href="http://www.itszn.edu.mx/preregistro/" target="_blank" rel="noopener" class="ds-btn ds-btn--secundario ds-btn--sm">Preregistro</a>
+        </div>
+      </div>
+
+      <div class="ds-card">
+        <h2 class="ds-card__titulo">¿Dónde consulto mis calificaciones?</h2>
+        <p>En el Sistema de Control Escolar (SCE), disponible para alumnos y académicos.</p>
+        <div class="ds-card__pie">
+          <a href="http://www.itszn.edu.mx/sce" target="_blank" rel="noopener" class="ds-btn ds-btn--secundario ds-btn--sm">Ir al SCE</a>
+        </div>
+      </div>
+
+      <div class="ds-card">
+        <h2 class="ds-card__titulo">¿Dónde tomo mis cursos en línea?</h2>
+        <p>En Moodle. Hay una plataforma para el sistema escolarizado y otra para posgrado.</p>
+        <div class="ds-card__pie">
+          <a href="https://itszn.edu.mx/moodle305/" target="_blank" rel="noopener" class="ds-btn ds-btn--secundario ds-btn--sm">Posgrado</a>
+          <a href="https://itszn.edu.mx/moodle/" target="_blank" rel="noopener" class="ds-btn ds-btn--primario ds-btn--sm">Escolarizado</a>
+        </div>
+      </div>
+
+      <div class="ds-card">
+        <h2 class="ds-card__titulo">¿Dónde encuentro libros digitales?</h2>
+        <p>En la biblioteca virtual del instituto, a través de e-libro.</p>
+        <div class="ds-card__pie">
+          <a href="https://elibro.net/es/lc/biblioitszn/inicio" target="_blank" rel="noopener" class="ds-btn ds-btn--secundario ds-btn--sm">Abrir biblioteca</a>
+        </div>
+      </div>
+
+      <div class="ds-card">
+        <h2 class="ds-card__titulo">¿Qué seguros tienen los alumnos?</h2>
+        <p>El instituto publica la información del seguro IMSS y del seguro TecNM para alumnos.</p>
+        <div class="ds-card__pie">
+          <a href="http://www.itszn.edu.mx/coyote/docs/imss.pdf" target="_blank" rel="noopener" class="ds-btn ds-btn--secundario ds-btn--sm">Seguro IMSS</a>
+          <a href="http://www.itszn.edu.mx/coyote/docs/tecnm.pdf" target="_blank" rel="noopener" class="ds-btn ds-btn--secundario ds-btn--sm">Seguro TecNM</a>
+        </div>
+      </div>
+
+      <div class="ds-card">
+        <h2 class="ds-card__titulo">¿Qué trámites y servicios puedo solicitar?</h2>
+        <p>Inscripciones, constancias, certificados, titulación, cursos de verano, credencial, impresión, cursos de inglés y más.</p>
+        <div class="ds-card__pie">
+          <a href="servicios.html" class="ds-btn ds-btn--secundario ds-btn--sm">Ver trámites y servicios</a>
+        </div>
+      </div>
+
+      <div class="ds-card">
+        <h2 class="ds-card__titulo">¿Dónde veo la oferta educativa?</h2>
+        <p>La oferta incluye licenciaturas, posgrado y educación continua.</p>
+        <div class="ds-card__pie">
+          <a href="https://www.itszn.edu.mx/coyote/?pag=lic" target="_blank" rel="noopener" class="ds-btn ds-btn--secundario ds-btn--sm">Licenciaturas</a>
+          <a href="https://www.itszn.edu.mx/coyote/?pag=posgrado" target="_blank" rel="noopener" class="ds-btn ds-btn--secundario ds-btn--sm">Posgrado</a>
+        </div>
+      </div>
+
+      <div class="ds-card">
+        <h2 class="ds-card__titulo">¿Dónde encuentro vacantes de trabajo?</h2>
+        <p>En la bolsa de trabajo del área de vinculación.</p>
+        <div class="ds-card__pie">
+          <a href="https://www.itszn.edu.mx/coyote/?pag=bolsa_t" target="_blank" rel="noopener" class="ds-btn ds-btn--secundario ds-btn--sm">Ir a la bolsa de trabajo</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="ds-footer">
+    © 2026 Sistema Institucional · Todos los derechos reservados
+  </footer>
+
+</div>
+</body>
+</html>

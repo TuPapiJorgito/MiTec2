@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Servicios · Sistema Institucional</title>
+  <link rel="stylesheet" href="design-system.css">
+</head>
+<body>
+<div class="ds-app">
+
+  <header class="ds-header">
+    <button class="ds-header__menu" aria-label="Abrir menú" onclick="document.querySelector('.ds-sidebar').classList.toggle('abierto')">☰</button>
+    <a href="index.html" class="ds-header__logo">
+      Sistema Institucional
+    </a>
+    <span class="ds-header__modulo">Servicios</span>
+    <span class="ds-header__usuario">Usuario</span>
+  </header>
+
+  <nav class="ds-sidebar" aria-label="Menú principal">
+    <div class="ds-sidebar__titulo">Módulos</div>
+    <a href="#">Conócenos</a>
+    <a href="#">Oferta educativa</a>
+    <a href="servicios.html" class="activo">Servicios</a>
+    <a href="faq.html">Preguntas frecuentes</a>
+    <a href="#">Bolsa de trabajo</a>
+    <div class="ds-sidebar__titulo">Sistema</div>
+    <a href="#">Configuración</a>
+  </nav>
+
+  <main class="ds-main">
+    <ol class="ds-breadcrumb">
+      <li><a href="index.html">Inicio</a></li>
+      <li>Servicios</li>
+    </ol>
+
+    <div class="ds-page-header">
+      <div>
+        <h1>Servicios</h1>
+        <p class="ds-texto-sec">Plataformas, trámites y servicios del TecNM campus Zacatecas Norte para alumnos y académicos.</p>
+      </div>
+    </div>
+
+    <h2>Plataformas y servicios en línea</h2>
+    <div class="ds-grid ds-grid-3">
+      <div class="ds-card">
+        <h3 class="ds-card__titulo">SCE</h3>
+        <p>Sistema de Control Escolar (también identificado como Sistema de Calificaciones), para alumnos y académicos.</p>
+        <div class="ds-card__pie">
+          <a href="http://www.itszn.edu.mx/sce" target="_blank" rel="noopener" class="ds-btn ds-btn--secundario ds-btn--sm">Ir al SCE</a>
+        </div>
+      </div>
+
+      <div class="ds-card">
+        <h3 class="ds-card__titulo">Moodle</h3>
+        <p>Plataformas de cursos en línea para el sistema escolarizado y para posgrado.</p>
+        <div class="ds-card__pie">
+          <a href="https://itszn.edu.mx/moodle305/" target="_blank" rel="noopener" class="ds-btn ds-btn--secundario ds-btn--sm">Posgrado</a>
+          <a href="https://itszn.edu.mx/moodle/" target="_blank" rel="noopener" class="ds-btn ds-btn--primario ds-btn--sm">Escolarizado</a>
+        </div>
+      </div>
+
+      <div class="ds-card">
+        <h3 class="ds-card__titulo">Biblioteca virtual</h3>
+        <p>Libros digitales a través de e-libro para alumnos y académicos.</p>
+        <div class="ds-card__pie">
+          <a href="https://elibro.net/es/lc/biblioitszn/inicio" target="_blank" rel="noopener" class="ds-btn ds-btn--secundario ds-btn--sm">Abrir biblioteca</a>
+        </div>
+      </div>
+
+      <div class="ds-card">
+        <h3 class="ds-card__titulo">Servicio social</h3>
+        <p>Información y registro del servicio social de los alumnos.</p>
+        <div class="ds-card__pie">
+          <a href="https://www.itszn.edu.mx/serviciosocial/" target="_blank" rel="noopener" class="ds-btn ds-btn--secundario ds-btn--sm">Ir a servicio social</a>
+        </div>
+      </div>
+
+      <div class="ds-card">
+        <h3 class="ds-card__titulo">Tutorías</h3>
+        <p>Sistema de tutorías para alumnos.</p>
+        <div class="ds-card__pie">
+          <a href="http://www.itszn.edu.mx/coyote/app/tutoria/index.html" target="_blank" rel="noopener" class="ds-btn ds-btn--secundario ds-btn--sm">Ir a tutorías</a>
+        </div>
+      </div>
+
+      <div class="ds-card">
+        <h3 class="ds-card__titulo">Seguros para alumnos</h3>
+        <p>Documentos informativos del seguro IMSS y del seguro TecNM.</p>
+        <div class="ds-card__pie">
+          <a href="http://www.itszn.edu.mx/coyote/docs/imss.pdf" target="_blank" rel="noopener" class="ds-btn ds-btn--secundario ds-btn--sm">Seguro IMSS</a>
+          <a href="http://www.itszn.edu.mx/coyote/docs/tecnm.pdf" target="_blank" rel="noopener" class="ds-btn ds-btn--secundario ds-btn--sm">Seguro TecNM</a>
+        </div>
+      </div>
+
+      <div class="ds-card">
+        <h3 class="ds-card__titulo">Seguimiento de egresados</h3>
+        <p>Sistema para dar seguimiento a los egresados del instituto.</p>
+        <div class="ds-card__pie">
+          <a href="http://www.itszn.edu.mx/sde" target="_blank" rel="noopener" class="ds-btn ds-btn--secundario ds-btn--sm">Ir al sistema</a>
+        </div>
+      </div>
+
+      <div class="ds-card">
+        <h3 class="ds-card__titulo">Correo institucional</h3>
+        <p>Acceso al correo institucional del campus.</p>
+        <div class="ds-card__pie">
+          <a href="https://portal.office.com/" target="_blank" rel="noopener" class="ds-btn ds-btn--secundario ds-btn--sm">Abrir correo</a>
+        </div>
+      </div>
+
+      <div class="ds-card">
+        <h3 class="ds-card__titulo">Preguntas frecuentes</h3>
+        <p>Respuestas a las dudas más comunes sobre el instituto.</p>
+        <div class="ds-card__pie">
+          <a href="faq.html" class="ds-btn ds-btn--secundario ds-btn--sm">Ver preguntas</a>
+        </div>
+      </div>
+    </div>
+
+    <h2>Trámites y servicios del instituto</h2>
+    <div class="ds-alerta ds-alerta--info">
+      <strong>Información en actualización</strong>La página oficial indica que parte de esta información aún está en proceso de recopilación.
+    </div>
+
+    <div class="ds-tabla-wrap">
+      <table class="ds-tabla">
+        <thead>
+          <tr><th>Tipo</th><th>Trámite o servicio</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Admisión</td><td>Admisión (<a href="https://admision.itszn.edu.mx/" target="_blank" rel="noopener">portal de admisión</a>)</td></tr>
+          <tr><td>Inscripción</td><td>Inscripción semestral, sistema escolarizado: según contrato colectivo, beca 70 %, beca 50 %, beca 25 % y residentes 10 %</td></tr>
+          <tr><td>Inscripción</td><td>Inscripción semestral, sistema semiescolarizado: según contrato colectivo, beca 70 %, beca 50 %, beca 25 % y residentes 10 %</td></tr>
+          <tr><td>Inscripción</td><td>Multa por inscripción extemporánea</td></tr>
+          <tr><td>Seguimiento académico</td><td>Seguimiento curricular</td></tr>
+          <tr><td>Documentos</td><td>Constancia de inscripción y/o estudios</td></tr>
+          <tr><td>Documentos</td><td>Certificado parcial, sin legalizar o legalizado</td></tr>
+          <tr><td>Titulación</td><td>Examen de titulación y/o protocolo</td></tr>
+          <tr><td>Titulación</td><td>Trámite de título profesional sin cédula</td></tr>
+          <tr><td>Biblioteca</td><td>Pago de multas de biblioteca</td></tr>
+          <tr><td>Institución</td><td>Donación a la institución</td></tr>
+          <tr><td>Servicios</td><td>Cursos de verano</td></tr>
+          <tr><td>Servicios</td><td>Reposición de credencial de estudiante</td></tr>
+          <tr><td>Servicios</td><td>Servicio de impresión y servicio de fotocopiado</td></tr>
+          <tr><td>Idiomas</td><td>Traducción de documentos (del inglés al español y del español al inglés)</td></tr>
+          <tr><td>Idiomas</td><td>Examen de ubicación de inglés y examen de pre-titulación (TOEIC)</td></tr>
+          <tr><td>Idiomas</td><td>Curso de inglés para estudiantes escolarizados y semiescolarizados, curso en línea y diplomado de inglés (curso externo)</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+
+  <footer class="ds-footer">
+    © 2026 Sistema Institucional · Todos los derechos reservados
+  </footer>
+
+</div>
+</body>
+</html>
